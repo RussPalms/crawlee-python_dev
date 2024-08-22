@@ -36,8 +36,8 @@ In the following code, we've made several changes:
 First, let's define our routes in a separate file:
 
 ```python title="src/routes.py"
-from crawlee.basic_crawler import Router
 from crawlee.playwright_crawler import PlaywrightCrawlingContext
+from crawlee.router import Router
 
 router = Router[PlaywrightCrawlingContext]()
 
